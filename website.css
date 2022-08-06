@@ -1,0 +1,388 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kaushan+Script&family=Qahiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+
+@media screen and (max-width:1138px) {
+    #navbar{
+        flex-direction: column;
+    }
+    
+    #skills {    
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #skills .box {
+        margin: 15px;
+        width: 50%;
+        height: 400px;
+    }
+    .written {
+        margin-left: 20px;
+    }
+    
+    #contact-box form{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .container{
+        padding: 3%;
+    }
+    #hello{
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+    #text{
+        font-size: 1rem;
+    }
+    #name{
+        font-size: 2.5rem;
+    }
+    #pimg{
+        width: 250px;
+        height: 250px;
+        padding: 12px;
+    }
+    .written{
+        margin-left: 40px;
+    }
+    
+    .about{
+        padding: 3%;
+    }
+    
+    .contentbox h3{
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+    }
+    
+    #aimg{
+        width: 250px;
+        height: 250px;
+    }
+    .contentbox{
+        padding-right: 2%;
+    }
+    #skills{
+        margin-top: 15px;
+    }
+    #skills .box {
+        width: 70%;
+        height: 370px;
+    }
+    
+    h2{
+        font-size: 1.5rem;
+    }
+    
+    #contact-box form {
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width:560px) {
+    #navbar ul {
+        margin-right: 10px;
+    }
+    
+    #navbar ul li a {
+        padding: 3px 15px;
+    }
+    
+    .container{
+        flex-direction: column;
+    }
+    .container .written{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    .written{
+        margin-left: 0px;
+    }
+    .content h3{
+        width: 100%;
+        text-align: center;
+    }
+    .abt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .about{
+        flex-direction: column;
+    }
+    #aimg{
+        margin-top: 25px;
+    }
+    
+    #skills .box{
+        width: 80%;
+        height: 300px;
+    }
+    
+    #contact-box form{
+        width: 80%;
+    }
+    
+}
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    justify-content: space-between;
+    width: 100%;
+    top: 0px;
+}
+#logo{
+    margin: 16px 40px;
+}
+#navbar ul{
+    display: flex;
+    margin-right: 40px;
+    
+    
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 1rem;
+    
+
+}
+#navbar ul li a {
+    display: block;
+    padding: 3px 20px;
+    text-decoration: none;
+    border-radius: 16px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    
+    
+}
+#navbar::before{
+    content: "";
+    background-color: #1e1a20;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+}
+#navbar ul li a:hover{
+    background-color:#66fcf1 ;
+    color:black;
+}
+.nlogo {
+    color:#66fcf1 ;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2rem;
+    
+}
+
+.container{
+    padding: 5%;
+    width: 100%;
+    background-color:#1e1a20 ;
+    /*background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pimg{
+    width: 300px;
+    height:300px;
+    border-radius: 20px;
+    border:3px solid #66fcf1;
+    padding: 15px;
+    
+}
+.container .img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .written {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    
+}
+
+#hello {
+    font-family: 'Lobster', cursive;
+    color:#66fcf1 ;
+    font-size: 2.5rem;
+}
+#text {
+    font-family: 'Marck Script', cursive;
+    font-size: 1.5rem;
+}
+#name {
+    font-size: 3.5rem;
+    font-family: 'Aclonica', sans-serif;
+    color:#66fcf1 ;
+}
+h4{
+    font-family: 'Lobster', cursive;
+    
+    font-size: 1.5rem;
+}
+
+#aimg {
+    width: 300px;
+    height: 300px;
+    border: 3px solid #66fcf1;
+    border-radius: 20px;
+    
+}
+.about {
+    display: flex;
+    padding: 5%;
+    
+}
+
+.contentbox h3 {
+    margin-bottom: 25px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5rem;
+}
+.contentbox{
+    padding-right: 10%;
+}
+
+.skill-container{
+   padding: 5%;
+   background-color: #1e1a20;
+  
+}
+#skills{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.skill-title{
+    width: 100%;
+    text-align: center;
+    color: #66fcf1;
+    
+}
+
+#skills .box{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-top: 1px soild rgba(255, 255, 255, 0.5);
+    border-left: 1px soild rgba(255, 255, 255, 0.5);*/
+    width: 25%;
+    background-color : rgba(255, 255, 255, 0.1);
+    
+    height: 350px;
+    border-radius: 30px;
+    
+
+
+    
+}
+h2{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5rem;
+}
+
+.contact {
+    
+    padding: 5%;
+    
+}
+#contact-heading {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5rem;
+    color: #1e1a20;
+}
+
+
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    
+    
+
+}
+#contact-box form {
+    width: 40%;
+    
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 1rem;
+    border: 2px solid #66fcf1;
+    
+    color: #66fcf1;
+    border-radius: 20px;
+    font-size: 1rem;
+    
+}
+
+
+
+footer{
+    background-color:#1e1a20 ;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+

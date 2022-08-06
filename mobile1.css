@@ -1,0 +1,55 @@
+.container{
+    padding: 3%;
+}
+#hello{
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 1rem;
+}
+#text{
+    font-size: 1rem;
+}
+#name{
+    font-size: 2.5rem;
+}
+#pimg{
+    width: 250px;
+    height: 250px;
+    padding: 12px;
+}
+.written{
+    margin-left: 40px;
+}
+
+.about{
+    padding: 3%;
+}
+
+.contentbox h3{
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+#aimg{
+    width: 250px;
+    height: 250px;
+}
+.contentbox{
+    padding-right: 2%;
+}
+#skills{
+    margin-top: 15px;
+}
+#skills .box {
+    width: 70%;
+    height: 370px;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+#contact-box form {
+    width: 70%;
+}

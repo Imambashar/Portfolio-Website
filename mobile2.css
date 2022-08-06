@@ -1,0 +1,47 @@
+#navbar ul {
+    margin-right: 10px;
+}
+
+#navbar ul li a {
+    padding: 3px 15px;
+}
+
+.container{
+    flex-direction: column;
+}
+.container .written{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+.written{
+    margin-left: 0px;
+}
+.content h3{
+    width: 100%;
+    text-align: center;
+}
+.abt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about{
+    flex-direction: column;
+}
+#aimg{
+    margin-top: 25px;
+}
+
+#skills .box{
+    width: 80%;
+    height: 300px;
+}
+
+#contact-box form{
+    width: 80%;
+}

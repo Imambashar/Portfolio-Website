@@ -1,0 +1,23 @@
+/*navigation-section*/
+#navbar{
+    flex-direction: column;
+}
+
+#skills {    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#skills .box {
+    margin: 15px;
+    width: 50%;
+    height: 400px;
+}
+.written {
+    margin-left: 20px;
+}
+
+#contact-box form{
+    width: 60%;
+}
